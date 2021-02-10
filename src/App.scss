@@ -47,7 +47,7 @@ body {
 
 .search {
   height: 2.5rem;
-  width: 80vw;
+  width: 35vw;
   margin: 1rem;
   display: flex;
 }
@@ -91,5 +91,11 @@ h2 {
 @media (max-width: 900px) {
   html {
     font-size: 90%;
+  }
+  .search {
+    height: 2.5rem;
+    width: 80vw;
+    margin: 1rem;
+    display: flex;
   }
 }
