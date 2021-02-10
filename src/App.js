@@ -61,7 +61,7 @@ function App() {
                 </h2>
 
                 <h2>Temparature: {weather.current.temp_c} deg</h2>
-                <h2>Wind Speed: {weather.current.wind_kph} km</h2>
+                <h2>Wind Speed: {weather.current.wind_kph} kmph</h2>
               </div>
             </div>
           </div>
