@@ -49,9 +49,9 @@ function App() {
               <button onClick={searchWeather}>Search</button>
             </div>
             <div className="weather">
-              <h1>
+              <h2>
                 Location: {weather.location.name},{weather.location.country}
-              </h1>
+              </h2>
 
               <h2>Time & Date: {weather.location.localtime}</h2>
               <div className="condition">
