@@ -8,7 +8,7 @@ function App() {
   useEffect(() => {
     axios
       .get(
-        "https://api.weatherapi.com/v1/current.json?key=fc1036cf7ff24ac7a95145357211002&q=Dhaka"
+        `https://api.weatherapi.com/v1/current.json?key=${process.env.REACT_APP_WEATHER_API}&q=Dhaka`
       )
       .then((data) => {
         setWeather(data.data);
@@ -28,7 +28,7 @@ function App() {
   const searchWeather = () => {
     axios
       .get(
-        `https://api.weatherapi.com/v1/current.json?key=fc1036cf7ff24ac7a95145357211002&q=${input}`
+        `https://api.weatherapi.com/v1/current.json?key=${process.env.REACT_APP_WEATHER_API}&q=${input}`
       )
       .then((data) => {
         setWeather(data.data);
